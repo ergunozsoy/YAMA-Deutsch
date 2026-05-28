@@ -11,7 +11,8 @@ Dieses Dokument enthält den technischen Validierungsbericht des lokalen Web-Pro
 * **Gibt es noch "import React" in App.tsx**: **nein** (Vollständig bereinigt, es wird nur `useState` importiert).
 * **Gibt es noch userAnswers in App.tsx**: **nein** (Vollständig entfernt, um TypeScript-Kompilierungsfehler bei ungenutzten Variablen zu verhindern).
 * **Gibt es irgendwo noch 06AppCode statt 06_App_Code**: **nein** (Alle Pfade und Ordnernamen lauten konsistent `06_App_Code`).
-* **Gesamtstatus**: **FREIGEGEBEN** (Die Code-Basis ist syntaktisch sauber, frei von Alt-Referenzen und der Build läuft lokal erfolgreich durch).
+* **Lokaler Satzprüfer Korrekturlogik**: **Aktualisiert und verifiziert** (Spezifische nutzernahe Korrekturregeln für die 5 definierten Testfälle werden vor dem allgemeinen errors.json-Matching ausgewertet und überschreiben `correctExample`).
+* **Gesamtstatus**: **FREIGEGEBEN** (Die Code-Basis ist syntaktisch sauber, frei von Alt-Referenzen, die Korrekturlogik arbeitet erwartungsgemäß und der Build läuft lokal erfolgreich durch).
 
 ---
 

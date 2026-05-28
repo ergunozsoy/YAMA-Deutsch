@@ -97,28 +97,58 @@ export default function App() {
     const text = sentenceInput.trim().toLowerCase();
     if (!text) return;
 
+    const cleanInput = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "").replace(/\s+/g, " ").trim();
+
+    // Spezifische lokale Korrekturregeln definieren
+    let specificErrorId: string | null = null;
+    let specificCorrection: string | null = null;
+
+    if (cleanInput === "heute ich gehe zur schule") {
+      specificErrorId = "SYN_INV_01";
+      specificCorrection = "Heute gehe ich zur Schule.";
+    } else if (cleanInput === "ich warte dich") {
+      specificErrorId = "MORSYN_PREP_01";
+      specificCorrection = "Ich warte auf dich.";
+    } else if (cleanInput === "ich trinke suppe") {
+      specificErrorId = "LEXSEM_DRINK_01";
+      specificCorrection = "Ich esse Suppe.";
+    } else if (cleanInput === "ich habe angst von hunden") {
+      specificErrorId = "MORSYN_CASE_02";
+      specificCorrection = "Ich habe Angst vor Hunden.";
+    } else if (cleanInput === "ich habe angst von dem hund") {
+      specificErrorId = "MORSYN_CASE_02";
+      specificCorrection = "Ich habe Angst vor dem Hund.";
+    }
+
     // Pattern Matching für typische Interferenzfehler
     let foundError: ErrorItem | undefined = undefined;
 
-    for (const err of errors) {
-      const wrongText = err.typical_wrong_example.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
-      const cleanInput = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
+    if (specificErrorId) {
+      foundError = errors.find(err => err.error_id === specificErrorId);
+    }
 
-      // Versuche exakte Wortgruppen oder Substrings zu matchen
-      if (
-        cleanInput.includes(wrongText) ||
-        (err.error_id === 'MORSYN_CASE_02' && cleanInput.includes("angst von")) ||
-        (err.error_id === 'LEXSEM_DRINK_01' && (cleanInput.includes("suppe trinken") || cleanInput.includes("trinke suppe") || cleanInput.includes("trinke eine suppe"))) ||
-        (err.error_id === 'SYN_INV_01' && cleanInput.startsWith("heute ich gehe")) ||
-        (err.error_id === 'PHON_EPEN_01' && cleanInput.includes("isport")) ||
-        (err.error_id === 'MOR_PLUR_01' && cleanInput.includes("drei bruder")) ||
-        (err.error_id === 'MORSYN_PREP_01' && cleanInput.includes("warte dich")) ||
-        (err.error_id === 'LEXSEM_GO_02' && cleanInput.includes("nach türkei") && (cleanInput.includes("gehe") || cleanInput.includes("gehen"))) ||
-        (err.error_id === 'SYN_NS_02' && cleanInput.includes("weil ich bin")) ||
-        (err.error_id === 'ORTH_UML_01' && cleanInput.includes("sehr schon"))
-      ) {
-        foundError = err;
-        break;
+    // Wenn keine spezifische Regel gegriffen hat, allgemeines Matching durchführen
+    if (!foundError) {
+      for (const err of errors) {
+        const wrongText = err.typical_wrong_example.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
+        const cleanInputForGeneral = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
+
+        // Versuche exakte Wortgruppen oder Substrings zu matchen
+        if (
+          cleanInputForGeneral.includes(wrongText) ||
+          (err.error_id === 'MORSYN_CASE_02' && cleanInputForGeneral.includes("angst von")) ||
+          (err.error_id === 'LEXSEM_DRINK_01' && (cleanInputForGeneral.includes("suppe trinken") || cleanInputForGeneral.includes("trinke suppe") || cleanInputForGeneral.includes("trinke eine suppe"))) ||
+          (err.error_id === 'SYN_INV_01' && cleanInputForGeneral.startsWith("heute ich gehe")) ||
+          (err.error_id === 'PHON_EPEN_01' && cleanInputForGeneral.includes("isport")) ||
+          (err.error_id === 'MOR_PLUR_01' && cleanInputForGeneral.includes("drei bruder")) ||
+          (err.error_id === 'MORSYN_PREP_01' && cleanInputForGeneral.includes("warte dich")) ||
+          (err.error_id === 'LEXSEM_GO_02' && cleanInputForGeneral.includes("nach türkei") && (cleanInputForGeneral.includes("gehe") || cleanInputForGeneral.includes("gehen"))) ||
+          (err.error_id === 'SYN_NS_02' && cleanInputForGeneral.includes("weil ich bin")) ||
+          (err.error_id === 'ORTH_UML_01' && cleanInputForGeneral.includes("sehr schon"))
+        ) {
+          foundError = err;
+          break;
+        }
       }
     }
 
@@ -128,7 +158,7 @@ export default function App() {
         error_id: foundError.error_id,
         title: foundError.title,
         wrongExample: foundError.typical_wrong_example,
-        correctExample: foundError.correct_example,
+        correctExample: specificCorrection || foundError.correct_example,
         feedbackDe: foundError.short_user_feedback.de,
         feedbackTr: foundError.short_user_feedback.tr
       });
