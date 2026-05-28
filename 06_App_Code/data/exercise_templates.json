@@ -1,0 +1,178 @@
+[
+  {
+    "template_id": "T_ORTH_UML_01",
+    "category": "ORTH",
+    "linked_error_ids": ["ORTH_UML_01"],
+    "exercise_type": "gap_fill",
+    "title": "Umlaute einsetzen",
+    "instruction": "Setze den passenden Vokal (a, o, u) oder Umlaut (ä, ö, ü) in das Wort ein, um den Satz grammatikalisch und semantisch korrekt zu vervollständigen.",
+    "example_prompt": "Das Essen schmeckt wirklich vorz____glich.",
+    "example_answer": "ü",
+    "feedback_pattern": "Der Umlaut 'ü' ist hier erforderlich. Im Deutschen markieren Umlautpunkte eine andere Vokalqualität als der Basisvokal 'u'."
+  },
+  {
+    "template_id": "T_ORTH_KAP_02",
+    "category": "ORTH",
+    "linked_error_ids": ["ORTH_KAP_03"],
+    "exercise_type": "correction",
+    "title": "Substantive großschreiben",
+    "instruction": "Korrigiere die fehlerhafte Kleinschreibung im folgenden Satz. Schreibe das Nomen korrekt groß.",
+    "example_prompt": "Mein bruder arbeitet heute bis spät in die Nacht.",
+    "example_answer": "Mein Bruder arbeitet heute bis spät in die Nacht.",
+    "feedback_pattern": "Nomen (wie 'Bruder') werden im Deutschen immer großgeschrieben, unabhägig von ihrer Position im Satz."
+  },
+  {
+    "template_id": "T_PHON_EPEN_01",
+    "category": "PHON",
+    "linked_error_ids": ["PHON_EPEN_01"],
+    "exercise_type": "correction",
+    "title": "Konsonantencluster bereinigen",
+    "instruction": "Korrigiere den Wortanfang. Entferne den unerwünschten Vorschaltvokal vor dem s-Konsonant-Cluster.",
+    "example_prompt": "Wir müssen pünktlich an der Istation sein.",
+    "example_answer": "Wir müssen pünktlich an der Station sein.",
+    "feedback_pattern": "Im Deutschen beginnen Wörter direkt mit 'St-' oder 'Sp-', ein vorangestellter I-Laut ist fehlerhaft."
+  },
+  {
+    "template_id": "T_PHON_AUSL_02",
+    "category": "PHON",
+    "linked_error_ids": ["PHON_AUSL_02"],
+    "exercise_type": "multiple_choice",
+    "title": "Richtige Schreibweise nach Auslautverhärtung",
+    "instruction": "Wähle die orthographisch korrekte Form des Wortes am Satzende.",
+    "example_prompt": "Ich gehe abends gerne am ______ spazieren.\nA) Strandt\nB) Strand\nC) Strant",
+    "example_answer": "B",
+    "feedback_pattern": "Obwohl das Wort am Ende wie 't' gesprochen wird (Auslautverhärtung), zeigt die Verlängerungsprobe 'Strände' das zugrundeliegende 'd'."
+  },
+  {
+    "template_id": "T_MOR_PLUR_01",
+    "category": "MOR",
+    "linked_error_ids": ["MOR_PLUR_01"],
+    "exercise_type": "gap_fill",
+    "title": "Pluralbildung nach Zahlen",
+    "instruction": "Bilde die korrekte Pluralform des in Klammern angegebenen Nomens nach der Zahlenangabe.",
+    "example_prompt": "Auf dem Tisch liegen vier ______ (Buch).",
+    "example_answer": "Bücher",
+    "feedback_pattern": "Nach Zahlen größer als eins verlangt das Deutsche zwingend den Plural, anders als das Türkische."
+  },
+  {
+    "template_id": "T_MOR_PREF_02",
+    "category": "MOR",
+    "linked_error_ids": ["MOR_PREF_03"],
+    "exercise_type": "gap_fill",
+    "title": "Partizip II bei untrennbaren Verben",
+    "instruction": "Bilde die korrekte Partizip-II-Form des untrennbaren Verbs in den Klammern.",
+    "example_prompt": "Der Lehrer hat den Text genau ______ (erklären).",
+    "example_answer": "erklärt",
+    "feedback_pattern": "Untrennbare Verben mit Präfixen wie 'er-' bilden das Partizip II ohne das Präfix '-ge-' (erklärt, nicht geerklärt)."
+  },
+  {
+    "template_id": "T_SYN_INV_01",
+    "category": "SYN",
+    "linked_error_ids": ["SYN_INV_01"],
+    "exercise_type": "sentence_order",
+    "title": "Satzbau mit Inversion",
+    "instruction": "Bringe die Wörter in die richtige Reihenfolge. Beginne die Satzstruktur mit dem vorgegebenen Adverbialsatzglied.",
+    "example_prompt": "[heute / wir / lernen / viel] - Beginn mit 'Heute'",
+    "example_answer": "Heute lernen wir viel.",
+    "feedback_pattern": "Nach dem Adverbial auf Position 1 folgt das finite Verb auf Position 2, das Subjekt steht auf Position 3."
+  },
+  {
+    "template_id": "T_SYN_NS_02",
+    "category": "SYN",
+    "linked_error_ids": ["SYN_NS_02"],
+    "exercise_type": "sentence_order",
+    "title": "Wortstellung im Nebensatz",
+    "instruction": "Bilde einen korrekten Nebensatz mit der Konjunktion 'dass' oder 'weil'. Schicke das konjugierte Verb ans Ende.",
+    "example_prompt": "[ich / weiß / dass / er / kommt / heute]",
+    "example_answer": "Ich weiß, dass er heute kommt.",
+    "feedback_pattern": "Die Nebensatzkonjunktion zwingt das konjugierte Verb ganz ans Ende des Satzgefüges."
+  },
+  {
+    "template_id": "T_MORSYN_PREP_01",
+    "category": "MORSYN",
+    "linked_error_ids": ["MORSYN_PREP_01"],
+    "exercise_type": "gap_fill",
+    "title": "Präpositional-Rektion ergänzen",
+    "instruction": "Setze die passende Präposition ein, die vom Verb gefordert wird.",
+    "example_prompt": "Wir freuen uns schon ______ den Urlaub.",
+    "example_answer": "auf",
+    "feedback_pattern": "Das Verb 'sich freuen' regiert bei zukünftigen Ereignissen die Präposition 'auf' + Akkusativ."
+  },
+  {
+    "template_id": "T_MORSYN_CASE_02",
+    "category": "MORSYN",
+    "linked_error_ids": ["MORSYN_CASE_02"],
+    "exercise_type": "multiple_choice",
+    "title": "Richtiger Präpositional-Kasus",
+    "instruction": "Wähle den korrekten Kasus nach der Präposition aus.",
+    "example_prompt": "Wir sprechen mit ______ Lehrer.\nA) den\nB) dem\nC) der",
+    "example_answer": "B",
+    "feedback_pattern": "Die Präposition 'mit' regiert immer den Dativ. 'Leute' ist maskulin, daher 'dem'."
+  },
+  {
+    "template_id": "T_LEXSEM_DRINK_01",
+    "category": "LEXSEM",
+    "linked_error_ids": ["LEXSEM_DRINK_01"],
+    "exercise_type": "multiple_choice",
+    "title": "Kollokationen richtig wählen",
+    "instruction": "Wähle das semantisch korrekte Verb zur Vervollständigung der kulinarischen Kollokation.",
+    "example_prompt": "Möchtest du heute eine Suppe ______?\nA) trinken\nB) essen\nC) nehmen",
+    "example_answer": "B",
+    "feedback_pattern": "Im Deutschen 'isst' man Suppe mit dem Löffel, man 'trinkt' sie nicht, selbst wenn sie flüssig ist."
+  },
+  {
+    "template_id": "T_LEXSEM_GO_02",
+    "category": "LEXSEM",
+    "linked_error_ids": ["LEXSEM_GO_02"],
+    "exercise_type": "gap_fill",
+    "title": "Präzises Bewegungsverb finden",
+    "instruction": "Setze das passende Bewegungsverb im Präsens ein (fahren, fliegen, gehen).",
+    "example_prompt": "Wir ______ mit dem Zug nach Hamburg.",
+    "example_answer": "fahren",
+    "feedback_pattern": "Für die Fortbewegung mit einem bodengebundenen Fahrzeug nutzt man 'fahren', nicht 'gehen'."
+  },
+  {
+    "template_id": "T_PRAG_IDIOM_01",
+    "category": "PRAG",
+    "linked_error_ids": ["PRAG_IDIOM_02"],
+    "exercise_type": "translation_tr_de",
+    "title": "Formeln adäquat übersetzen",
+    "instruction": "Übersetze die pragmatische Formel situationsgerecht ins Deutsche (keine Wort-für-Wort-Übersetzung!).",
+    "example_prompt": "Situation: Jemand wünscht dir Erfolg bei der Arbeit. Türkisch: 'Kolay gelsin.' Wie antwortest du auf Deutsch?",
+    "example_answer": "Frohes Schaffen! / Viel Erfolg bei der Arbeit!",
+    "feedback_pattern": "Kulturelle Formeln lassen sich nicht wörtlich übersetzen. 'Kolay gelsin' entspricht im Deutschen Formeln wie 'Frohes Schaffen!' oder 'Viel Erfolg!'."
+  },
+  {
+    "template_id": "T_PRAG_RESP_02",
+    "category": "PRAG",
+    "linked_error_ids": ["PRAG_RESP_03"],
+    "exercise_type": "multiple_choice",
+    "title": "Richtige Antwort auf Befindlichkeit",
+    "instruction": "Wähle die idiomatisch vollständig korrekte Antwort auf die Frage nach dem Befinden.",
+    "example_prompt": "Wie geht es dir?\nA) Es geht mir.\nB) Mir geht es gut.\nC) Ich bin gut.",
+    "example_answer": "B",
+    "feedback_pattern": "Die Antwort erfordert ein bewertendes Adjektiv/Adverb. 'Es geht mir' ist unvollständig, 'Ich bin gut' bedeutet etwas anderes (Kompetenz)."
+  },
+  {
+    "template_id": "T_TEXT_PUNC_01",
+    "category": "TEXT",
+    "linked_error_ids": ["TEXT_PUNC_02"],
+    "exercise_type": "correction",
+    "title": "Komma vor Nebensätzen setzen",
+    "instruction": "Korrigiere die Zeichensetzung, indem du das fehlende Komma vor dem Nebensatz einfügst.",
+    "example_prompt": "Ich freue mich dass du heute kommen kannst.",
+    "example_answer": "Ich freue mich, dass du heute kommen kannst.",
+    "feedback_pattern": "Im Deutschen trennt ein obligatorisches Komma den Hauptsatz vom Nebensatz, der hier mit 'dass' eingeleitet wird."
+  },
+  {
+    "template_id": "T_TEXT_PASS_02",
+    "category": "TEXT",
+    "linked_error_ids": ["TEXT_PASS_03"],
+    "exercise_type": "multiple_choice",
+    "title": "Passivierung anwenden",
+    "instruction": "Wähle den Satz aus, der die Handlung ohne Nennung des Täters im natürlichen Schriftsatz ausdrückt (Passiv).",
+    "example_prompt": "Wie drückt man aus, dass das Haus renoviert wurde?\nA) Man hat das Haus renoviert.\nB) Das Haus wurde renoviert.\nC) Sie renovierten das Haus.",
+    "example_answer": "B",
+    "feedback_pattern": "Das Vorgangspassiv ('wurde renoviert') ist im schriftlichen Deutsch die präferierte Form für agentenunbestimmte Aktionen."
+  }
+]
