@@ -498,6 +498,9 @@ export default function App() {
           </div>
         )}
       </main>
+      <footer style={{ textAlign: 'center', padding: '2rem 1rem 3rem', marginTop: '1rem', fontSize: '0.85rem', opacity: 0.6 }}>
+        Konzept &amp; Inhalt: Dr. Ergun Özsoy, LMU München
+      </footer>
     </>
   );
 }
