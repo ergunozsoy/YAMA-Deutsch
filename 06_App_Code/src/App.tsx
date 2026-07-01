@@ -29,6 +29,8 @@ export default function App() {
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
   const [incorrectErrorIds, setIncorrectErrorIds] = useState<string[]>([]);
   const [testCompleted, setTestCompleted] = useState<boolean>(false);
+  // text_cloze: eine Antwort pro Lücke
+  const [clozeAnswers, setClozeAnswers] = useState<string[]>([]);
 
   // Anonymous Mode State
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -47,15 +49,35 @@ export default function App() {
   const startDiagnostic = () => {
     setCurrentTaskIdx(0);
     setCurrentAnswer('');
+    setClozeAnswers([]);
     setShowFeedback(false);
     setIncorrectErrorIds([]);
     setTestCompleted(false);
     setView('diagnostic');
   };
 
+  // Prüft eine einzelne Lücke (text_cloze)
+  const isGapCorrect = (gapIdx: number): boolean => {
+    const currentTask = diagnosticTasks[currentTaskIdx];
+    if (!currentTask.cloze) return false;
+    const gap = currentTask.cloze.gaps[gapIdx];
+    const user = normalizeAnswer(clozeAnswers[gapIdx] || '');
+    if (user === normalizeAnswer(gap.answer)) return true;
+    if (gap.accepted) {
+      return gap.accepted.some(a => normalizeAnswer(a) === user);
+    }
+    return false;
+  };
+
   // Check if current answer is correct
   const isCurrentAnswerCorrect = () => {
     const currentTask = diagnosticTasks[currentTaskIdx];
+
+    // text_cloze: alle Lücken müssen korrekt sein
+    if (currentTask.task_type === 'text_cloze' && currentTask.cloze) {
+      return currentTask.cloze.gaps.every((_, idx) => isGapCorrect(idx));
+    }
+
     const normUser = normalizeAnswer(currentAnswer);
     const normExpected = normalizeAnswer(currentTask.expected_answer);
     
@@ -85,6 +107,7 @@ export default function App() {
   const nextDiagnosticTask = () => {
     setShowFeedback(false);
     setCurrentAnswer('');
+    setClozeAnswers([]);
     if (currentTaskIdx + 1 < diagnosticTasks.length) {
       setCurrentTaskIdx(prev => prev + 1);
     } else {
@@ -275,7 +298,39 @@ export default function App() {
             <h3 className="task-prompt">{diagnosticTasks[currentTaskIdx].prompt}</h3>
 
             {/* Render Input Forms based on task_type */}
-            {diagnosticTasks[currentTaskIdx].task_type === 'multiple_choice' ? (
+            {diagnosticTasks[currentTaskIdx].task_type === 'text_cloze' && diagnosticTasks[currentTaskIdx].cloze ? (
+              <div className="cloze-text">
+                {diagnosticTasks[currentTaskIdx].cloze!.segments.map((seg, i) => {
+                  const gaps = diagnosticTasks[currentTaskIdx].cloze!.gaps;
+                  return (
+                    <span key={i}>
+                      <span>{seg}</span>
+                      {i < gaps.length && (
+                        <span className="cloze-gap">
+                          <input
+                            type="text"
+                            disabled={showFeedback}
+                            className={
+                              'cloze-input' +
+                              (showFeedback ? (isGapCorrect(i) ? ' ok' : ' no') : '')
+                            }
+                            value={clozeAnswers[i] || ''}
+                            onChange={(e) => {
+                              const next = [...clozeAnswers];
+                              next[i] = e.target.value;
+                              setClozeAnswers(next);
+                            }}
+                          />
+                          {gaps[i].hint && (
+                            <span className="cloze-hint">({gaps[i].hint})</span>
+                          )}
+                        </span>
+                      )}
+                    </span>
+                  );
+                })}
+              </div>
+            ) : diagnosticTasks[currentTaskIdx].task_type === 'multiple_choice' ? (
               <div className="mc-grid">
                 {(diagnosticTasks[currentTaskIdx].options || [
                   { key: 'A', text: 'Option A' },
@@ -315,7 +370,11 @@ export default function App() {
             {!showFeedback ? (
               <button 
                 className="btn btn-primary" 
-                disabled={!currentAnswer.trim()} 
+                disabled={
+                  diagnosticTasks[currentTaskIdx].task_type === 'text_cloze' && diagnosticTasks[currentTaskIdx].cloze
+                    ? !diagnosticTasks[currentTaskIdx].cloze!.gaps.every((_, i) => (clozeAnswers[i] || '').trim())
+                    : !currentAnswer.trim()
+                } 
                 onClick={submitDiagnosticAnswer}
               >
                 Antwort prüfen
@@ -333,7 +392,11 @@ export default function App() {
                   <div className="feedback-box wrong">
                     <div className="feedback-title">✗ Nicht ganz richtig</div>
                     <div className="feedback-body">
-                      <div><strong>Erwartete Antwort:</strong> {diagnosticTasks[currentTaskIdx].expected_answer}</div>
+                      {diagnosticTasks[currentTaskIdx].task_type === 'text_cloze' && diagnosticTasks[currentTaskIdx].cloze ? (
+                        <div><strong>Richtige Formen:</strong> {diagnosticTasks[currentTaskIdx].cloze!.gaps.map(g => g.answer).join(' · ')}</div>
+                      ) : (
+                        <div><strong>Erwartete Antwort:</strong> {diagnosticTasks[currentTaskIdx].expected_answer}</div>
+                      )}
                       <div className="feedback-lang">
                         <strong>Deutsch:</strong> {diagnosticTasks[currentTaskIdx].feedback.de}
                       </div>
