@@ -107,7 +107,7 @@
     "instruction": "Wähle den korrekten Kasus nach der Präposition aus.",
     "example_prompt": "Wir sprechen mit ______ Lehrer.\nA) den\nB) dem\nC) der",
     "example_answer": "B",
-    "feedback_pattern": "Die Präposition 'mit' regiert immer den Dativ. 'Leute' ist maskulin, daher 'dem'."
+    "feedback_pattern": "Die Präposition 'mit' regiert immer den Dativ. 'Lehrer' ist maskulin, daher 'dem'."
   },
   {
     "template_id": "T_LEXSEM_DRINK_01",
