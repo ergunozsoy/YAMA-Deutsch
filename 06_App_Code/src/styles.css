@@ -564,3 +564,52 @@ header {
   from { transform: translateY(15px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* ===== text_cloze (Lückentext im Kontext) ===== */
+.cloze-text {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  font-size: 1.05rem;
+  line-height: 2.6;
+  margin-bottom: 1rem;
+}
+.cloze-gap {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: baseline;
+  margin: 0 3px;
+}
+.cloze-input {
+  min-width: 90px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 4px 9px;
+  text-align: center;
+  transition: border-color 0.15s;
+}
+.cloze-input:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+.cloze-input.ok {
+  border-color: var(--success);
+  background: rgba(16, 185, 129, 0.1);
+}
+.cloze-input.no {
+  border-color: var(--danger);
+  background: rgba(239, 68, 68, 0.1);
+}
+.cloze-hint {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-align: center;
+  margin-top: 2px;
+  font-style: italic;
+}

@@ -14,10 +14,23 @@ export interface ErrorItem {
   source_basis: string[];
 }
 
+export interface ClozeGap {
+  answer: string;
+  accepted?: string[];
+  hint?: string;
+}
+
+export interface ClozeData {
+  // Text segments and gaps interleave: segments[0], gap[0], segments[1], gap[1], ...
+  // A {{n}} placeholder in the segments is not used; instead segments.length === gaps.length + 1
+  segments: string[];
+  gaps: ClozeGap[];
+}
+
 export interface DiagnosticTask {
   question_id: string;
   error_id: string;
-  task_type: 'correction' | 'multiple_choice' | 'sentence_order' | 'translation_tr_de' | 'gap_fill' | 'short_writing';
+  task_type: 'correction' | 'multiple_choice' | 'sentence_order' | 'translation_tr_de' | 'gap_fill' | 'short_writing' | 'text_cloze';
   prompt: string;
   expected_answer: string;
   typical_wrong_patterns: string[];
@@ -29,6 +42,7 @@ export interface DiagnosticTask {
   exercise_recommendation: string;
   options?: { key: string; text: string }[];
   accepted_answers?: string[];
+  cloze?: ClozeData;
 }
 
 export interface ExerciseTemplate {
