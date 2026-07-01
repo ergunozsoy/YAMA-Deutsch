@@ -5,13 +5,19 @@
     "task_type": "sentence_order",
     "prompt": "Bringe die Satzglieder in die richtige Reihenfolge: [ich / gehe / heute / nicht / in die Schule]. Beginne den Satz mit 'Heute'.",
     "expected_answer": "Heute gehe ich nicht in die Schule.",
-    "typical_wrong_patterns": ["Heute ich gehe nicht in die Schule."],
-    "accepted_answers": ["Heute gehe ich nicht in die Schule"],
+    "typical_wrong_patterns": [
+      "Heute ich gehe nicht in die Schule."
+    ],
+    "accepted_answers": [
+      "Heute gehe ich nicht in die Schule"
+    ],
     "feedback": {
       "de": "Im Deutschen gilt die Verb-Zweit-Regel (V2). Steht ein anderes Satzglied im Vorfeld (hier das Zeitadverb „Heute“), muss das konjugierte Verb direkt danach auf Position 2 folgen. Das Subjekt rückt auf Position 3.",
       "tr": "Almancada fiil ikinci sırada yer alır (V2 kuralı). Cümle başında başka bir öge varsa (burada zaman zarfı 'Heute'), çekimli fiil hemen ardından 2. sırada gelmelidir. Özne ise 3. sıraya kayar."
     },
-    "source_basis": ["Wilhelm Grießhaber"],
+    "source_basis": [
+      "Wilhelm Grießhaber"
+    ],
     "exercise_recommendation": "Syntax-Training: Inversion meistern"
   },
   {
@@ -20,17 +26,31 @@
     "task_type": "multiple_choice",
     "prompt": "Wähle die grammatikalisch korrekte Fortführung des Satzes aus: „Ich bleibe heute zu Hause, ...“\nA) ... weil ich bin krank.\nB) ... weil bin ich krank.\nC) ... weil ich krank bin.",
     "expected_answer": "C",
-    "typical_wrong_patterns": ["A", "B"],
+    "typical_wrong_patterns": [
+      "A",
+      "B"
+    ],
     "options": [
-      { "key": "A", "text": "... weil ich bin krank." },
-      { "key": "B", "text": "... weil bin ich krank." },
-      { "key": "C", "text": "... weil ich krank bin." }
+      {
+        "key": "A",
+        "text": "... weil ich bin krank."
+      },
+      {
+        "key": "B",
+        "text": "... weil bin ich krank."
+      },
+      {
+        "key": "C",
+        "text": "... weil ich krank bin."
+      }
     ],
     "feedback": {
       "de": "Die Konjunktion „weil“ leitet einen Nebensatz ein. Im deutschen Nebensatz muss das konjugierte Verb (hier „bin“) ganz am Ende stehen.",
       "tr": "'weil' bağlacı bir yan cümle kurar. Almancada yan cümlelerde çekimli fiil (burada 'bin') her zaman cümlenin en sonunda yer almalıdır."
     },
-    "source_basis": ["Wilhelm Grießhaber"],
+    "source_basis": [
+      "Wilhelm Grießhaber"
+    ],
     "exercise_recommendation": "Nebensätze und Verb-End-Stellung"
   },
   {
@@ -39,7 +59,9 @@
     "task_type": "correction",
     "prompt": "Korrigiere den Satz: „Ich habe gestern gekauft ein neues Auto.“",
     "expected_answer": "Ich habe gestern ein neues Auto gekauft.",
-    "typical_wrong_patterns": ["Ich habe gestern gekauft ein neues Auto."],
+    "typical_wrong_patterns": [
+      "Ich habe gestern gekauft ein neues Auto."
+    ],
     "accepted_answers": [
       "Ich habe gestern ein neues Auto gekauft",
       "ich habe gestern ein neues auto gekauft"
@@ -48,7 +70,9 @@
       "de": "Das Perfekt bildet im Hauptsatz eine „Satzklammer“. Das Hilfsverb („habe“) steht auf Position 2, während das Partizip II („gekauft“) am Satzende stehen muss. Das Objekt steht dazwischen.",
       "tr": "Perfekt zamanı ana cümlede bir 'söz dizimi parantezi' (Satzklammer) oluşturur. Yardımcı fiil ('habe') 2. sırada yer alırken, Partizip II ('gekauft') cümlenin en sonunda yer almalıdır. Nesne araya yazılır."
     },
-    "source_basis": ["Wilhelm Grießhaber"],
+    "source_basis": [
+      "Wilhelm Grießhaber"
+    ],
     "exercise_recommendation": "Die deutsche Satzklammer bei zusammengesetzten Zeiten"
   },
   {
@@ -57,13 +81,20 @@
     "task_type": "gap_fill",
     "prompt": "Ergänze den Buchstaben (mit oder ohne Umlautpunkte): „Das Wetter heute ist wirklich sch____n.“ (Gemeint ist: hübsch / angenehm) Schreibe nur den fehlenden Buchstaben.",
     "expected_answer": "ö",
-    "typical_wrong_patterns": ["o"],
-    "accepted_answers": ["schön"],
+    "typical_wrong_patterns": [
+      "o"
+    ],
+    "accepted_answers": [
+      "schön"
+    ],
     "feedback": {
       "de": "Umlautpunkte verändern im Deutschen die Bedeutung grundlegend. Während „schon“ ein Adverb ist (z. B. ich bin schon da), ist „schön“ ein Adjektiv (das Wetter ist schön).",
       "tr": "Almancada umlaut noktaları anlamı tamamen değiştirir. 'schon' bir zarftır (zaten), 'schön' ise bir sıfattır (güzel)."
     },
-    "source_basis": ["Sarah Buchberger", "Tahir Balcı"],
+    "source_basis": [
+      "Sarah Buchberger",
+      "Tahir Balcı"
+    ],
     "exercise_recommendation": "Umlaute gezielt unterscheiden und schreiben"
   },
   {
@@ -72,12 +103,16 @@
     "task_type": "gap_fill",
     "prompt": "Ergänze das fehlende Wort orthographisch korrekt: „Wo ______ du?“ (Verb: wohnen) Schreibe das ganze Wort.",
     "expected_answer": "wohnst",
-    "typical_wrong_patterns": ["wonst"],
+    "typical_wrong_patterns": [
+      "wonst"
+    ],
     "feedback": {
       "de": "Viele deutsche Wörter besitzen ein stummes Dehnungs-h vor dem Konsonanten, das den Vokal lang spricht. Dieses h wird oft weggelassen, da das Türkische Vokallänge orthographisch nicht markiert.",
       "tr": "Birçok Almanca kelimede, ünlü sesin uzun okunmasını sağlayan sessiz bir 'h' harfi bulunur. Türkçe yazımda ses uzunlukları gösterilmediği için bu 'h' genellikle unutulur."
     },
-    "source_basis": ["Sarah Buchberger"],
+    "source_basis": [
+      "Sarah Buchberger"
+    ],
     "exercise_recommendation": "Dehnung und Schärfung im Deutschen"
   },
   {
@@ -86,13 +121,20 @@
     "task_type": "correction",
     "prompt": "Korrigiere den Satz orthographisch: „Wir kaufen einen neuen tisch.“",
     "expected_answer": "Wir kaufen einen neuen Tisch.",
-    "typical_wrong_patterns": ["tisch"],
-    "accepted_answers": ["Wir kaufen einen neuen Tisch"],
+    "typical_wrong_patterns": [
+      "tisch"
+    ],
+    "accepted_answers": [
+      "Wir kaufen einen neuen Tisch"
+    ],
     "feedback": {
       "de": "Im Deutschen werden alle Substantive (Nomen) großgeschrieben. Im Türkischen werden sie kleingeschrieben, weshalb du hier besonders aufpassen musst.",
       "tr": "Almancada tüm isimler (Nomen) büyük harfle başlar. Türkçede isimler küçük yazıldığı için bu kurala özellikle dikkat etmelisiniz."
     },
-    "source_basis": ["Sarah Buchberger", "Benholz & Lipkowski"],
+    "source_basis": [
+      "Sarah Buchberger",
+      "Benholz & Lipkowski"
+    ],
     "exercise_recommendation": "Groß- und Kleinschreibung von Nomen"
   },
   {
@@ -101,13 +143,19 @@
     "task_type": "correction",
     "prompt": "Korrigiere das falsch geschriebene Wort im Satz: „Ich spiele jeden Dienstag Isport.“ Schreibe das ganze Wort.",
     "expected_answer": "Sport",
-    "typical_wrong_patterns": ["Isport"],
-    "accepted_answers": ["sport"],
+    "typical_wrong_patterns": [
+      "Isport"
+    ],
+    "accepted_answers": [
+      "sport"
+    ],
     "feedback": {
       "de": "Wörter, die im Deutschen mit „Sp-“ oder „St-“ beginnen, haben keinen Vokal davor. Das Voranstellen eines „I-Lautes“ (wie Isport oder Istation) ist ein Transfer aus dem Türkischen, da dort anlautende Konsonantencluster vermieden werden.",
       "tr": "Almancada 'Sp' veya 'St' ile başlayan kelimelerin önünde ünlü harf olmaz. Başına 'i' sesi eklemek (Isport veya Istation gibi) Türkçedeki çift sessiz harfle başlamama kuralından kaynaklanan bir aktarımdır."
     },
-    "source_basis": ["Ayşe Adıyaman"],
+    "source_basis": [
+      "Ayşe Adıyaman"
+    ],
     "exercise_recommendation": "Konsonantencluster im Anlaut fehlerfrei sprechen und schreiben"
   },
   {
@@ -116,17 +164,32 @@
     "task_type": "multiple_choice",
     "prompt": "Welches Wort ist orthographisch korrekt geschrieben? „Dieses ______ ist sehr alt.“ (Gemeint ist: Foto / Illustration)\nA) Bilt\nB) Bild\nC) Biltz",
     "expected_answer": "B",
-    "typical_wrong_patterns": ["A", "C"],
+    "typical_wrong_patterns": [
+      "A",
+      "C"
+    ],
     "options": [
-      { "key": "A", "text": "Bilt" },
-      { "key": "B", "text": "Bild" },
-      { "key": "C", "text": "Biltz" }
+      {
+        "key": "A",
+        "text": "Bilt"
+      },
+      {
+        "key": "B",
+        "text": "Bild"
+      },
+      {
+        "key": "C",
+        "text": "Biltz"
+      }
     ],
     "feedback": {
       "de": "Zwar sprechen wir das Wort am Ende mit einem stimmlosen /t/ aus (Auslautverhärtung), geschrieben wird es aber mit „d“, da im Plural das „d“ stimmhaft gesprochen wird (Bilder).",
       "tr": "Kelime sonundaki 'd' sesini sertleştirip 't' gibi okusak da (Auslautverhärtung), çoğul halinde 'd' olarak korunduğu için ('Bilder') kelime 'd' ile yazılır."
     },
-    "source_basis": ["Ayşe Adıyaman", "Sarah Buchberger"],
+    "source_basis": [
+      "Ayşe Adıyaman",
+      "Sarah Buchberger"
+    ],
     "exercise_recommendation": "Auslautverhärtung und Verlängerungsprobe"
   },
   {
@@ -135,13 +198,19 @@
     "task_type": "gap_fill",
     "prompt": "Welches Wort passt? „Ich ______ heute keine Zeit.“ (Präsens von haben) Schreibe das ganze Wort.",
     "expected_answer": "habe",
-    "typical_wrong_patterns": ["abe"],
-    "accepted_answers": ["habe"],
+    "typical_wrong_patterns": [
+      "abe"
+    ],
+    "accepted_answers": [
+      "habe"
+    ],
     "feedback": {
       "de": "Der Buchstabe „H“ am Wortanfang ist im Deutschen ein deutlich artikulierter Hauchlaut. Achte darauf, ihn nicht wegzulassen (nicht abe statt habe sprechen oder schreiben).",
       "tr": "Almancada kelime başındaki 'H' harfi belirgin bir nefes sesiyle söylenir. Yazıda veya konuşmada bunu atlamamaya dikkat edin ('abe' değil 'habe')."
     },
-    "source_basis": ["Ayşe Adıyaman"],
+    "source_basis": [
+      "Ayşe Adıyaman"
+    ],
     "exercise_recommendation": "Der Hauchlaut H im Wortanlaut"
   },
   {
@@ -150,13 +219,20 @@
     "task_type": "gap_fill",
     "prompt": "Bilde die richtige Form des Wortes in Klammern: „Im Büro arbeiten heute drei ______ (Frau).“ Schreibe das ganze Wort.",
     "expected_answer": "Frauen",
-    "typical_wrong_patterns": ["Frau"],
-    "accepted_answers": ["frauen"],
+    "typical_wrong_patterns": [
+      "Frau"
+    ],
+    "accepted_answers": [
+      "frauen"
+    ],
     "feedback": {
       "de": "Im Deutschen muss nach Zahlen ab zwei immer die Pluralform (Mehrzahl) verwendet werden. Im Türkischen bleibt das Nomen nach Zahlen im Singular (üç kadın = drei Frau).",
       "tr": "Almancada birden büyük sayıların ardından gelen isimler çoğul yapılmalıdır. Türkçede ise sayılardan sonra isim tekil kalır (üç kadın)."
     },
-    "source_basis": ["Tahir Balcı", "Hiclal Aktaş"],
+    "source_basis": [
+      "Tahir Balcı",
+      "Hiclal Aktaş"
+    ],
     "exercise_recommendation": "Pluralbildung und Kongruenz nach Quantoren"
   },
   {
@@ -165,17 +241,31 @@
     "task_type": "multiple_choice",
     "prompt": "Was ist der natürlichste deutsche Begriff für: „Die Tür eines Hauses“?\nA) Die Tür von dem Haus\nB) Die Haustür\nC) Die Haus Tür",
     "expected_answer": "B",
-    "typical_wrong_patterns": ["A", "C"],
+    "typical_wrong_patterns": [
+      "A",
+      "C"
+    ],
     "options": [
-      { "key": "A", "text": "Die Tür von dem Haus" },
-      { "key": "B", "text": "Die Haustür" },
-      { "key": "C", "text": "Die Haus Tür" }
+      {
+        "key": "A",
+        "text": "Die Tür von dem Haus"
+      },
+      {
+        "key": "B",
+        "text": "Die Haustür"
+      },
+      {
+        "key": "C",
+        "text": "Die Haus Tür"
+      }
     ],
     "feedback": {
       "de": "Das Deutsche bildet sehr gerne zusammengesetzte Nomen (Komposita) wie „Haustür“ als ein einziges Wort. Getrennte Schreibweisen oder Umschreibungen mit „von“ klingen oft unnatürlich.",
       "tr": "Almanca birleşik isimleri (Komposita) tek bir kelime olarak yazmayı sever: 'Haustür'. Kelimeleri ayrı yazmak oder 'von' ile bağlamak genellikle kulağa doğal gelmez."
     },
-    "source_basis": ["Tahir Balcı"],
+    "source_basis": [
+      "Tahir Balcı"
+    ],
     "exercise_recommendation": "Wortbildung: Nominalkomposita richtig zusammensetzen"
   },
   {
@@ -184,7 +274,10 @@
     "task_type": "gap_fill",
     "prompt": "Ergänze den Satz mit dem passenden Verbteil: „Er ______ die Tür leise ______.“ (Verb: zumachen) Schreibe beide Teile getrennt durch /, z. B. macht / zu.",
     "expected_answer": "macht / zu",
-    "typical_wrong_patterns": ["zumacht", "macht"],
+    "typical_wrong_patterns": [
+      "zumacht",
+      "macht"
+    ],
     "accepted_answers": [
       "macht zu",
       "Er macht die Tür leise zu.",
@@ -194,7 +287,10 @@
       "de": "Bei trennbaren Verben (wie zumachen) steht das konjugierte Verb im Hauptsatz auf Position 2, das abtrennbare Präfix (zu) wandert ganz ans Ende des Satzes.",
       "tr": "Ayrılabilen fiillerde (örneğin zumachen), çekimli fiil kısmı cümlede 2. sırada yer alırken, ayrılan ön ek ('zu') cümlenin en sonuna gider."
     },
-    "source_basis": ["Tahir Balcı", "Hiclal Aktaş"],
+    "source_basis": [
+      "Tahir Balcı",
+      "Hiclal Aktaş"
+    ],
     "exercise_recommendation": "Präfixe und trennbare Verben im Satz"
   },
   {
@@ -203,13 +299,20 @@
     "task_type": "gap_fill",
     "prompt": "Ergänze das fehlende Wort: „Bitte warte ______ mich am Ausgang.“ Schreibe das ganze Wort.",
     "expected_answer": "auf",
-    "typical_wrong_patterns": ["für", ""],
-    "accepted_answers": ["auf"],
+    "typical_wrong_patterns": [
+      "für",
+      ""
+    ],
+    "accepted_answers": [
+      "auf"
+    ],
     "feedback": {
       "de": "Das deutsche Verb „warten“ verlangt zwingend die Präposition „auf“ mit dem Akkusativ. Im Türkischen wird dies rein über das Suffix ausgedrückt (beni bekle = mich warte), weshalb Lerner oft die Präposition weglassen.",
       "tr": "Almancada 'warten' fiili 'auf + Akkusativ' yapısıyla kullanılır: auf mich. Türkçede 'beni bekle' yapısında edat olmadığı için bu edat kolayca unutulabilir."
     },
-    "source_basis": ["Hiclal Aktaş"],
+    "source_basis": [
+      "Hiclal Aktaş"
+    ],
     "exercise_recommendation": "Präpositionalobjekte und feste Rektionen"
   },
   {
@@ -218,17 +321,31 @@
     "task_type": "multiple_choice",
     "prompt": "Welcher Satz ist korrekt?\nA) Ich habe Angst von Hunden.\nB) Ich habe Angst vor Hunden.\nC) Ich habe Angst an Hunden.",
     "expected_answer": "B",
-    "typical_wrong_patterns": ["A", "C"],
+    "typical_wrong_patterns": [
+      "A",
+      "C"
+    ],
     "options": [
-      { "key": "A", "text": "Ich habe Angst von Hunden." },
-      { "key": "B", "text": "Ich habe Angst vor Hunden." },
-      { "key": "C", "text": "Ich habe Angst an Hunden." }
+      {
+        "key": "A",
+        "text": "Ich habe Angst von Hunden."
+      },
+      {
+        "key": "B",
+        "text": "Ich habe Angst vor Hunden."
+      },
+      {
+        "key": "C",
+        "text": "Ich habe Angst an Hunden."
+      }
     ],
     "feedback": {
       "de": "Das türkische Verb korkmak fordert das Suffix -den (Ablativ, dt. von). Im Deutschen verlangt der Ausdruck „Angst haben“ jedoch die Präposition „vor“ + Dativ.",
       "tr": "Türkçedeki 'korkmak' fiili çıkma durumu (-den) eki gerektirir. Ancak Almancada 'Angst haben' ifadesi 'vor' edatı (+ Dativ) ile kullanılır."
     },
-    "source_basis": ["Hiclal Aktaş"],
+    "source_basis": [
+      "Hiclal Aktaş"
+    ],
     "exercise_recommendation": "Fehlerfalle Ablativ-Transfer: von vs. vor/aus"
   },
   {
@@ -237,13 +354,19 @@
     "task_type": "gap_fill",
     "prompt": "Ergänze das Verb im Präsens: „Viele Leute ______ (kommen) heute zu Besuch.“ Schreibe das ganze Wort.",
     "expected_answer": "kommen",
-    "typical_wrong_patterns": ["kommt"],
-    "accepted_answers": ["kommen"],
+    "typical_wrong_patterns": [
+      "kommt"
+    ],
+    "accepted_answers": [
+      "kommen"
+    ],
     "feedback": {
       "de": "Im Deutschen ist „Leute“ ein reines Pluralwort. Das Verb muss daher ebenfalls im Plural stehen („kommen“). Im Türkischen kann bei Pluralnomen das Verb im Singular stehen (insanlar geliyor).",
       "tr": "Almancada 'Leute' kelimesi her zaman çoğuldur. Bu yüzden fiil de çoğul çekimlenmelidir. Türkçede ise çoğul öznelerden sonra fiil tekil kalabilir (insanlar geliyor)."
     },
-    "source_basis": ["Hiclal Aktaş"],
+    "source_basis": [
+      "Hiclal Aktaş"
+    ],
     "exercise_recommendation": "Subjekt-Verb-Kongruenz bei Kollektiva"
   },
   {
@@ -252,17 +375,31 @@
     "task_type": "multiple_choice",
     "prompt": "Was sagt man im Restaurant?\nA) Ich möchte eine Gemüsesuppe trinken.\nB) Ich möchte eine Gemüsesuppe essen.\nC) Ich möchte eine Gemüsesuppe machen.",
     "expected_answer": "B",
-    "typical_wrong_patterns": ["A", "C"],
+    "typical_wrong_patterns": [
+      "A",
+      "C"
+    ],
     "options": [
-      { "key": "A", "text": "Ich möchte eine Gemüsesuppe trinken." },
-      { "key": "B", "text": "Ich möchte eine Gemüsesuppe essen." },
-      { "key": "C", "text": "Ich möchte eine Gemüsesuppe machen." }
+      {
+        "key": "A",
+        "text": "Ich möchte eine Gemüsesuppe trinken."
+      },
+      {
+        "key": "B",
+        "text": "Ich möchte eine Gemüsesuppe essen."
+      },
+      {
+        "key": "C",
+        "text": "Ich möchte eine Gemüsesuppe machen."
+      }
     ],
     "feedback": {
       "de": "Im Deutschen nutzt man für Suppen das Verb „essen“, da sie eine Mahlzeit sind, die mit dem Löffel verzehrt wird. „Trinken“ bezieht sich nur auf Getränke aus Gläsern oder Tassen.",
       "tr": "Almancada çorba kaşıkla yenen bir yemek olarak kabul edildiğinden 'essen' (yemek) fiiliyle kullanılır. 'trinken' (içmek) sadece bardaktan içilen içecekler için geçerlidir."
     },
-    "source_basis": ["Tahir Balcı"],
+    "source_basis": [
+      "Tahir Balcı"
+    ],
     "exercise_recommendation": "Lexikalische Kollokationen: Essen vs. Trinken"
   },
   {
@@ -271,13 +408,19 @@
     "task_type": "gap_fill",
     "prompt": "Welches Bewegungsverb passt am besten? „Wir ______ nächsten Sommer in die USA.“ (Reise mit dem Flugzeug) Schreibe das ganze Wort.",
     "expected_answer": "fliegen",
-    "typical_wrong_patterns": ["gehen"],
-    "accepted_answers": ["fliegen"],
+    "typical_wrong_patterns": [
+      "gehen"
+    ],
+    "accepted_answers": [
+      "fliegen"
+    ],
     "feedback": {
       "de": "Das türkische gitmek drückt jede Fortbewegung aus. Im Deutschen müssen wir präzise sein: Benutzt man das Flugzeug, sagt man „fliegen“, bei Schiff/Auto/Zug „fahren“, und „gehen“ nutzt man nur für Wege zu Fuß.",
       "tr": "Türkçedeki 'gitmek' fiili her türlü ulaşımı ifade eder. Ancak Almancada hassas olmalıyız: Uçakla gidiliyorsa 'fliegen', araçla gidiliyorsa 'fahren', yürüyerek gidiliyorsa 'gehen' kullanılır."
     },
-    "source_basis": ["Tahir Balcı"],
+    "source_basis": [
+      "Tahir Balcı"
+    ],
     "exercise_recommendation": "Spezifische Bewegungsverben im Deutschen"
   },
   {
@@ -286,7 +429,9 @@
     "task_type": "correction",
     "prompt": "Ersetze das Verb „machen“ durch ein passenderes, spezifischeres Verb: „Ich möchte heute in der Kirche ein Gebet machen.“ Schreibe das ganze Wort.",
     "expected_answer": "beten",
-    "typical_wrong_patterns": ["machen"],
+    "typical_wrong_patterns": [
+      "machen"
+    ],
     "accepted_answers": [
       "ein Gebet sprechen",
       "Gebet sprechen"
@@ -295,7 +440,9 @@
       "de": "Türkisch nutzt yapmak sehr häufig, um Nomen zu verbalisieren. Im Deutschen wirkt das oft plump. Verwende statt „ein Gebet machen“ lieber direkt das Verb „beten“ oder „ein Gebet sprechen“.",
       "tr": "Türkçe isimleri fiilleştirmek için sıklıkla 'yapmak' yardımcı fiilini kullanır. Almancada bu genellikle kaba durur. 'ein Gebet machen' yerine doğrudan 'beten' (dua etmek) fiilini tercih edin."
     },
-    "source_basis": ["Tahir Balcı"],
+    "source_basis": [
+      "Tahir Balcı"
+    ],
     "exercise_recommendation": "Machen-Ersatz: Treffende Verben wählen"
   },
   {
@@ -304,7 +451,9 @@
     "task_type": "translation_tr_de",
     "prompt": "Wie bedankt man sich im Deutschen höflich bei jemandem, der für einen gekocht hat? (Türkisches Äquivalent: „Elinize sağlık“)",
     "expected_answer": "Vielen Dank für das leckere Essen!",
-    "typical_wrong_patterns": ["Gesundheit für deine Hände."],
+    "typical_wrong_patterns": [
+      "Gesundheit für deine Hände."
+    ],
     "accepted_answers": [
       "Vielen Dank für das leckere Essen",
       "Danke für das leckere Essen",
@@ -315,7 +464,9 @@
       "de": "Kulturelle Höflichkeitsformeln lassen sich fast nie wörtlich übersetzen. Der Ausdruck „Eline sağlık“ hat kein direktes deutsches Äquivalent. Drücke stattdessen einfach deinen Dank für das Essen aus.",
       "tr": "Kültürel nezaket kalıpları neredeyse hiçbir zaman kelimesi kelimesine çevrilemez. 'Eline sağlık' ifadesinin Almancada tam karşılığı yoktur. Bunun yerine yemek için teşekkür etmelisiniz."
     },
-    "source_basis": ["Benholz & Lipkowski"],
+    "source_basis": [
+      "Benholz & Lipkowski"
+    ],
     "exercise_recommendation": "Pragmatik und Kulturtransfer im Alltag"
   },
   {
@@ -324,7 +475,9 @@
     "task_type": "correction",
     "prompt": "Setze das Komma an die richtige Stelle: „Ich weiß nicht ob er mich verstanden hat.“",
     "expected_answer": "Ich weiß nicht, ob er mich verstanden hat.",
-    "typical_wrong_patterns": ["Ich weiß nicht ob er mich verstanden hat."],
+    "typical_wrong_patterns": [
+      "Ich weiß nicht ob er mich verstanden hat."
+    ],
     "accepted_answers": [
       "„Ich weiß nicht, ob er mich verstanden hat.“",
       "Ich weiß nicht, ob er mich verstanden hat"
@@ -333,7 +486,169 @@
       "de": "Im Deutschen ist das Komma vor Nebensätzen (hier eingeleitet mit der Konjunktion „ob“) Pflicht. Im Türkischen werden solche Sätze oft ohne Komma konstruiert.",
       "tr": "Almancada yan cümlelerden önce (burada 'ob' bağlacı ile başlayan cümle) virgül koymak zorunludur. Türkçede bu tür yapılar genellikle virgülsüz kurulur."
     },
-    "source_basis": ["Sarah Buchberger", "Benholz & Lipkowski"],
+    "source_basis": [
+      "Sarah Buchberger",
+      "Benholz & Lipkowski"
+    ],
     "exercise_recommendation": "Kommasetzung bei Nebensätzen"
+  },
+  {
+    "question_id": "Q_SYN_INV_CLOZE_21",
+    "error_id": "SYN_INV_01",
+    "task_type": "text_cloze",
+    "prompt": "Ein Tag von Aylin — ergänze das Verb in der richtigen Form auf Position 2. Die vorangestellte Angabe (z. B. „Am Morgen“) steht schon da.",
+    "expected_answer": "trinkt / fährt / trifft / schreibt / kocht",
+    "typical_wrong_patterns": [
+      "Am Morgen Aylin trinkt einen Kaffee.",
+      "Dann sie fährt mit dem Bus."
+    ],
+    "feedback": {
+      "de": "Steht eine Angabe im Vorfeld (Am Morgen, Dann, Mittags …), muss das konjugierte Verb direkt danach auf Position 2 stehen; das Subjekt folgt erst auf Position 3. Die Struktur bleibt im ganzen Text gleich.",
+      "tr": "Cümle başında bir öge varsa (Am Morgen, Dann, Mittags …), çekimli fiil hemen ardından 2. sırada gelir; özne ise 3. sıraya kayar. Bu yapı metnin tamamında aynı kalır."
+    },
+    "source_basis": [
+      "Wilhelm Grießhaber",
+      "Sinja Hirt & Michael Penzold"
+    ],
+    "exercise_recommendation": "Syntax im Kontext: Verbzweitstellung im Tagesablauf (Zwischenschritt zum generativen Schreiben)",
+    "cloze": {
+      "segments": [
+        "Am Morgen ",
+        " Aylin einen Kaffee. Dann ",
+        " sie mit dem Bus zur Arbeit. Mittags ",
+        " sie eine Kollegin in der Kantine. Am Nachmittag ",
+        " sie viele E-Mails. Am Abend ",
+        " sie für ihre Familie."
+      ],
+      "gaps": [
+        {
+          "answer": "trinkt",
+          "hint": "trinken"
+        },
+        {
+          "answer": "fährt",
+          "accepted": [
+            "faehrt"
+          ],
+          "hint": "fahren"
+        },
+        {
+          "answer": "trifft",
+          "hint": "treffen"
+        },
+        {
+          "answer": "schreibt",
+          "hint": "schreiben"
+        },
+        {
+          "answer": "kocht",
+          "hint": "kochen"
+        }
+      ]
+    }
+  },
+  {
+    "question_id": "Q_TEXT_PASS_CLOZE_22",
+    "error_id": "TEXT_PASS_03",
+    "task_type": "text_cloze",
+    "prompt": "So wird ein Kuchen gebacken — ergänze die Passivform (werden + Partizip). Achte auf Singular und Plural.",
+    "expected_answer": "werden / wird / wird / werden / wird",
+    "typical_wrong_patterns": [
+      "Man nimmt die Eier.",
+      "Die Zutaten wird gemischt."
+    ],
+    "feedback": {
+      "de": "Das Vorgangspassiv bildet man mit „werden“ + Partizip II. „werden“ richtet sich nach dem Subjekt: Singular → wird, Plural → werden. Im Rezepttext ist das Passiv natürlicher als „man“.",
+      "tr": "Süreç edilgeni „werden“ + Partizip II ile kurulur. „werden“ öznenin sayısına uyar: tekil → wird, çoğul → werden. Tarif metninde edilgen yapı „man“dan daha doğaldır."
+    },
+    "source_basis": [
+      "Benholz & Lipkowski",
+      "Sinja Hirt & Michael Penzold"
+    ],
+    "exercise_recommendation": "Text im Kontext: Vorgangspassiv im Rezept (Sg/Pl-Kongruenz von werden)",
+    "cloze": {
+      "segments": [
+        "Zuerst ",
+        " die Eier und der Zucker verrührt. Dann ",
+        " das Mehl dazugegeben. Die Masse ",
+        " in eine Form gefüllt. Anschließend ",
+        " der Kuchen 40 Minuten gebacken. Zum Schluss ",
+        " er mit Puderzucker bestreut."
+      ],
+      "gaps": [
+        {
+          "answer": "werden",
+          "hint": "werden/wird?"
+        },
+        {
+          "answer": "wird",
+          "hint": "werden/wird?"
+        },
+        {
+          "answer": "wird",
+          "hint": "werden/wird?"
+        },
+        {
+          "answer": "wird",
+          "hint": "werden/wird?"
+        },
+        {
+          "answer": "wird",
+          "hint": "werden/wird?"
+        }
+      ]
+    }
+  },
+  {
+    "question_id": "Q_MORSYN_CASE_CLOZE_23",
+    "error_id": "MORSYN_CASE_02",
+    "task_type": "text_cloze",
+    "prompt": "Wohin und wo? — ergänze den bestimmten Artikel im richtigen Kasus nach der Präposition. (Bewegung → Akkusativ, Ort/Ruhe → Dativ)",
+    "expected_answer": "die / der / dem / den / der",
+    "typical_wrong_patterns": [
+      "Ich gehe in die Schule / Ich bin in die Schule (Ort → Dativ nötig)",
+      "auf dem Tisch (Bewegung → Akkusativ nötig)"
+    ],
+    "feedback": {
+      "de": "Wechselpräpositionen (in, auf, an, über …) verlangen bei Bewegung (wohin?) den Akkusativ, bei Ort/Ruhe (wo?) den Dativ. Im Türkischen entscheidet die Fallendung anders – deshalb ist die Wohin/Wo-Frage die sichere Kontrolle.",
+      "tr": "Yön edatları (in, auf, an, über …) hareket varsa (wohin? – nereye) Akkusativ, konum/durağanlık varsa (wo? – nerede) Dativ ister. Türkçede durum eki farklı işlediği için 'nereye mi / nerede mi' sorusu en güvenli kontroldür."
+    },
+    "source_basis": [
+      "Hiclal Aktaş",
+      "Chlosta / Schäfer / Baur"
+    ],
+    "exercise_recommendation": "MORSYN im Kontext: Wechselpräpositionen Akkusativ vs. Dativ",
+    "cloze": {
+      "segments": [
+        "Am Montag geht Aylin in ",
+        " Schule. (wohin?) Sie legt ihr Buch auf ",
+        " Tisch. (wohin?) Jetzt sitzt sie an ",
+        " Tisch (wo?) und schaut aus ",
+        " Fenster. (wo? – Pl.) Nach dem Unterricht bleibt sie noch in ",
+        " Bibliothek. (wo?)"
+      ],
+      "gaps": [
+        {
+          "answer": "die",
+          "hint": "Akk. f."
+        },
+        {
+          "answer": "den",
+          "hint": "Akk. m."
+        },
+        {
+          "answer": "dem",
+          "hint": "Dat. m."
+        },
+        {
+          "answer": "dem",
+          "hint": "Dat. n."
+        },
+        {
+          "answer": "der",
+          "hint": "Dat. f."
+        }
+      ]
+    }
   }
 ]
