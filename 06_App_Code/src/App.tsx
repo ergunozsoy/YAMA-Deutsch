@@ -264,7 +264,7 @@ export default function App() {
         <div className="header-container">
           <div className="logo" onClick={() => setView('home')}>YAMA Deutsch</div>
           {view !== 'home' && (
-            <button className="nav-home-btn" onClick={() => setView('home')}>Startseite</button>
+            <><a className="nav-home-btn" href="https://github.com/ergunozsoy/YAMA-Deutsch/blob/main/YAMA_WERKSTATT.md" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginRight: '0.5rem' }}>Werkstatt (DH)</a><button className="nav-home-btn" onClick={() => setView('home')}>Startseite</button></>
           )}
         </div>
       </header>
