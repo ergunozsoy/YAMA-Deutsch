@@ -10,6 +10,29 @@ const errors = errorsData as ErrorItem[];
 const diagnosticTasks = diagnosticData as DiagnosticTask[];
 const exerciseTemplates = templatesData as ExerciseTemplate[];
 
+// Lernkreislauf: Interferenzfehler -> passendes Sprachvergleich-Modul (Deep-Link)
+const DAZ_BASE = "https://ergunozsoy.github.io/YAMA-DaZ-Sprachvergleich/#";
+const DAZ_TOPIC: Record<string, string> = {
+  SYN_INV_01: "wortstell",   // V2 / Inversion
+  SYN_NS_02: "wortstell",    // Nebensatz verbfinal
+  SYN_VKB_03: "wortstell",   // Verbklammer
+  TEXT_PASS_03: "passiv",
+  MORSYN_PREP_01: "praep",
+  MORSYN_CASE_02: "plural",  // Plural & Kasus
+  MORSYN_CONG_03: "verben",
+  MOR_PLUR_01: "plural",
+  MOR_COMP_02: "kompar",
+  MOR_PREF_03: "verben",     // trennbare Verben
+  ORTH_UML_01: "vokalh",
+  ORTH_DEHN_02: "alphabet",
+  PHON_AUSL_02: "auslaut",
+  PHON_EPEN_01: "sprossv",
+  PHON_H_03: "alphabet",
+  LEXSEM_DO_03: "verben",
+  LEXSEM_GO_02: "verben",
+  LEXSEM_DRINK_01: "verben"
+};
+
 function normalizeAnswer(input: string): string {
   if (!input) return '';
   let normalized = input.trim().toLowerCase();
@@ -219,7 +242,8 @@ export default function App() {
         error_id: id,
         title: associatedError?.title || "Interferenzfehler",
         module: associatedTask?.exercise_recommendation || "Übungsmodul",
-        explanation: associatedError?.short_user_feedback.de || ""
+        explanation: associatedError?.short_user_feedback.de || "",
+        dazLink: DAZ_TOPIC[String(id)] ? DAZ_BASE + DAZ_TOPIC[String(id)] : null
       };
     }).slice(0, 3); // Maximal 3 Empfehlungen anzeigen
 
@@ -445,6 +469,14 @@ export default function App() {
                       <span style={{ fontSize: '0.78rem', color: 'var(--accent-secondary)', fontWeight: '600', textTransform: 'uppercase' }}>
                         Empfohlenes Modul: {rec.module}
                       </span>
+                      {rec.dazLink && (
+                        <div style={{ marginTop: '0.6rem' }}>
+                          <a href={rec.dazLink} target="_blank" rel="noopener noreferrer"
+                             style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--accent-primary)', textDecoration: 'none' }}>
+                            Zum Sprachvergleich-Modul →
+                          </a>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
