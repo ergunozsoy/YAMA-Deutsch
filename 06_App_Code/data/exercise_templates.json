@@ -2,7 +2,9 @@
   {
     "template_id": "T_ORTH_UML_01",
     "category": "ORTH",
-    "linked_error_ids": ["ORTH_UML_01"],
+    "linked_error_ids": [
+      "ORTH_UML_01"
+    ],
     "exercise_type": "gap_fill",
     "title": "Umlaute einsetzen",
     "instruction": "Setze den passenden Vokal (a, o, u) oder Umlaut (ä, ö, ü) in das Wort ein, um den Satz grammatikalisch und semantisch korrekt zu vervollständigen.",
@@ -13,7 +15,9 @@
   {
     "template_id": "T_ORTH_KAP_02",
     "category": "ORTH",
-    "linked_error_ids": ["ORTH_KAP_03"],
+    "linked_error_ids": [
+      "ORTH_KAP_03"
+    ],
     "exercise_type": "correction",
     "title": "Substantive großschreiben",
     "instruction": "Korrigiere die fehlerhafte Kleinschreibung im folgenden Satz. Schreibe das Nomen korrekt groß.",
@@ -24,7 +28,9 @@
   {
     "template_id": "T_PHON_EPEN_01",
     "category": "PHON",
-    "linked_error_ids": ["PHON_EPEN_01"],
+    "linked_error_ids": [
+      "PHON_EPEN_01"
+    ],
     "exercise_type": "correction",
     "title": "Konsonantencluster bereinigen",
     "instruction": "Korrigiere den Wortanfang. Entferne den unerwünschten Vorschaltvokal vor dem s-Konsonant-Cluster.",
@@ -35,7 +41,9 @@
   {
     "template_id": "T_PHON_AUSL_02",
     "category": "PHON",
-    "linked_error_ids": ["PHON_AUSL_02"],
+    "linked_error_ids": [
+      "PHON_AUSL_02"
+    ],
     "exercise_type": "multiple_choice",
     "title": "Richtige Schreibweise nach Auslautverhärtung",
     "instruction": "Wähle die orthographisch korrekte Form des Wortes am Satzende.",
@@ -46,7 +54,9 @@
   {
     "template_id": "T_MOR_PLUR_01",
     "category": "MOR",
-    "linked_error_ids": ["MOR_PLUR_01"],
+    "linked_error_ids": [
+      "MOR_PLUR_01"
+    ],
     "exercise_type": "gap_fill",
     "title": "Pluralbildung nach Zahlen",
     "instruction": "Bilde die korrekte Pluralform des in Klammern angegebenen Nomens nach der Zahlenangabe.",
@@ -57,7 +67,9 @@
   {
     "template_id": "T_MOR_PREF_02",
     "category": "MOR",
-    "linked_error_ids": ["MOR_PREF_03"],
+    "linked_error_ids": [
+      "MOR_PREF_03"
+    ],
     "exercise_type": "gap_fill",
     "title": "Partizip II bei untrennbaren Verben",
     "instruction": "Bilde die korrekte Partizip-II-Form des untrennbaren Verbs in den Klammern.",
@@ -68,7 +80,9 @@
   {
     "template_id": "T_SYN_INV_01",
     "category": "SYN",
-    "linked_error_ids": ["SYN_INV_01"],
+    "linked_error_ids": [
+      "SYN_INV_01"
+    ],
     "exercise_type": "sentence_order",
     "title": "Satzbau mit Inversion",
     "instruction": "Bringe die Wörter in die richtige Reihenfolge. Beginne die Satzstruktur mit dem vorgegebenen Adverbialsatzglied.",
@@ -79,7 +93,9 @@
   {
     "template_id": "T_SYN_NS_02",
     "category": "SYN",
-    "linked_error_ids": ["SYN_NS_02"],
+    "linked_error_ids": [
+      "SYN_NS_02"
+    ],
     "exercise_type": "sentence_order",
     "title": "Wortstellung im Nebensatz",
     "instruction": "Bilde einen korrekten Nebensatz mit der Konjunktion 'dass' oder 'weil'. Schicke das konjugierte Verb ans Ende.",
@@ -90,7 +106,9 @@
   {
     "template_id": "T_MORSYN_PREP_01",
     "category": "MORSYN",
-    "linked_error_ids": ["MORSYN_PREP_01"],
+    "linked_error_ids": [
+      "MORSYN_PREP_01"
+    ],
     "exercise_type": "gap_fill",
     "title": "Präpositional-Rektion ergänzen",
     "instruction": "Setze die passende Präposition ein, die vom Verb gefordert wird.",
@@ -101,7 +119,9 @@
   {
     "template_id": "T_MORSYN_CASE_02",
     "category": "MORSYN",
-    "linked_error_ids": ["MORSYN_CASE_02"],
+    "linked_error_ids": [
+      "MORSYN_CASE_02"
+    ],
     "exercise_type": "multiple_choice",
     "title": "Richtiger Präpositional-Kasus",
     "instruction": "Wähle den korrekten Kasus nach der Präposition aus.",
@@ -112,7 +132,9 @@
   {
     "template_id": "T_LEXSEM_DRINK_01",
     "category": "LEXSEM",
-    "linked_error_ids": ["LEXSEM_DRINK_01"],
+    "linked_error_ids": [
+      "LEXSEM_DRINK_01"
+    ],
     "exercise_type": "multiple_choice",
     "title": "Kollokationen richtig wählen",
     "instruction": "Wähle das semantisch korrekte Verb zur Vervollständigung der kulinarischen Kollokation.",
@@ -123,7 +145,9 @@
   {
     "template_id": "T_LEXSEM_GO_02",
     "category": "LEXSEM",
-    "linked_error_ids": ["LEXSEM_GO_02"],
+    "linked_error_ids": [
+      "LEXSEM_GO_02"
+    ],
     "exercise_type": "gap_fill",
     "title": "Präzises Bewegungsverb finden",
     "instruction": "Setze das passende Bewegungsverb im Präsens ein (fahren, fliegen, gehen).",
@@ -134,7 +158,9 @@
   {
     "template_id": "T_PRAG_IDIOM_01",
     "category": "PRAG",
-    "linked_error_ids": ["PRAG_IDIOM_02"],
+    "linked_error_ids": [
+      "PRAG_IDIOM_02"
+    ],
     "exercise_type": "translation_tr_de",
     "title": "Formeln adäquat übersetzen",
     "instruction": "Übersetze die pragmatische Formel situationsgerecht ins Deutsche (keine Wort-für-Wort-Übersetzung!).",
@@ -145,7 +171,9 @@
   {
     "template_id": "T_PRAG_RESP_02",
     "category": "PRAG",
-    "linked_error_ids": ["PRAG_RESP_03"],
+    "linked_error_ids": [
+      "PRAG_RESP_03"
+    ],
     "exercise_type": "multiple_choice",
     "title": "Richtige Antwort auf Befindlichkeit",
     "instruction": "Wähle die idiomatisch vollständig korrekte Antwort auf die Frage nach dem Befinden.",
@@ -156,7 +184,9 @@
   {
     "template_id": "T_TEXT_PUNC_01",
     "category": "TEXT",
-    "linked_error_ids": ["TEXT_PUNC_02"],
+    "linked_error_ids": [
+      "TEXT_PUNC_02"
+    ],
     "exercise_type": "correction",
     "title": "Komma vor Nebensätzen setzen",
     "instruction": "Korrigiere die Zeichensetzung, indem du das fehlende Komma vor dem Nebensatz einfügst.",
@@ -167,12 +197,60 @@
   {
     "template_id": "T_TEXT_PASS_02",
     "category": "TEXT",
-    "linked_error_ids": ["TEXT_PASS_03"],
+    "linked_error_ids": [
+      "TEXT_PASS_03"
+    ],
     "exercise_type": "multiple_choice",
     "title": "Passivierung anwenden",
     "instruction": "Wähle den Satz aus, der die Handlung ohne Nennung des Täters im natürlichen Schriftsatz ausdrückt (Passiv).",
     "example_prompt": "Wie drückt man aus, dass das Haus renoviert wurde?\nA) Man hat das Haus renoviert.\nB) Das Haus wurde renoviert.\nC) Sie renovierten das Haus.",
     "example_answer": "B",
     "feedback_pattern": "Das Vorgangspassiv ('wurde renoviert') ist im schriftlichen Deutsch die präferierte Form für agentenunbestimmte Aktionen."
+  },
+  {
+    "template_id": "T_SYN_V2TEXT_01",
+    "category": "SYN",
+    "linked_error_ids": [
+      "SYN_INV_01"
+    ],
+    "exercise_type": "sentence_order",
+    "title": "Verbzweitstellung im Tagesablauf (Textkette)",
+    "instruction": "Bringe die Wörter jedes Satzes in die richtige Reihenfolge, sodass ein zusammenhängender Tagesablauf entsteht. Jeder Satz beginnt mit dem vorangestellten Zeitausdruck; das finite Verb steht danach an zweiter Stelle.",
+    "example_prompt": "(1) [Am Morgen / ich / trinke / einen Kaffee] (2) [Dann / ich / fahre / zur Arbeit] (3) [Mittags / ich / treffe / eine Kollegin] (4) [Am Abend / ich / koche / für meine Familie]",
+    "example_answer": "Am Morgen trinke ich einen Kaffee. Dann fahre ich zur Arbeit. Mittags treffe ich eine Kollegin. Am Abend koche ich für meine Familie.",
+    "feedback_pattern": "In jedem Satz steht der Zeitausdruck im Vorfeld; danach folgt das finite Verb auf Position 2, das Subjekt 'ich' auf Position 3. Weil die vier Sätze einen Tagesablauf ergeben, wird die V2-Stellung als wiederkehrendes Textmerkmal geübt – nicht am isolierten Einzelsatz."
+  },
+  {
+    "template_id": "T_TEXT_PASSIV_01",
+    "category": "TEXT",
+    "linked_error_ids": [],
+    "exercise_type": "transformation",
+    "title": "Vorgangspassiv im Rezept (Umformung im Text)",
+    "instruction": "Schreibe den kurzen Rezepttext im Vorgangspassiv (werden + Partizip II), ohne den Handelnden zu nennen.",
+    "example_prompt": "Aktiv: Zuerst mischt man die Zutaten. Dann knetet man den Teig. Anschließend backt man ihn bei 180 Grad.",
+    "example_answer": "Zuerst werden die Zutaten gemischt. Dann wird der Teig geknetet. Anschließend wird er bei 180 Grad gebacken.",
+    "feedback_pattern": "Das Vorgangspassiv bildet man mit 'werden' + Partizip II; das 'man' entfällt. Im zusammenhängenden Rezept wird sichtbar, wofür das Passiv im schriftlichen Deutsch da ist: Es reiht sachliche Handlungsschritte, ohne dass ein Handelnder genannt werden muss – das kann ein isolierter Satz kaum zeigen."
+  },
+  {
+    "template_id": "T_PRAG_DIALOG_01",
+    "category": "PRAG",
+    "linked_error_ids": [],
+    "exercise_type": "gap_fill",
+    "title": "Formeln im Gesprächskontext (Dialog)",
+    "instruction": "Ergänze im Dialog die situationsangemessene deutsche Wendung (keine wörtliche Übersetzung).",
+    "example_prompt": "Im Büro, morgens. A: Guten Morgen! Wie geht es dir? B: ______ Und dir? A: Auch gut, danke. Ich muss jetzt anfangen. B: Na dann – ______! (türkisch: 'Kolay gelsin')",
+    "example_answer": "'Danke, mir geht es gut.' / 'Frohes Schaffen!' (auch: 'Viel Erfolg!')",
+    "feedback_pattern": "Erst der Gesprächsrahmen zeigt, welche Formel passt: Auf 'Wie geht es dir?' antwortet man 'Mir geht es gut' (nicht 'Ich bin gut'); zum Arbeitsbeginn passt für 'Kolay gelsin' die Wendung 'Frohes Schaffen!' / 'Viel Erfolg!'. Im Dialog werden die Formeln als Teil einer echten Situation geübt statt als Einzelitem."
+  },
+  {
+    "template_id": "T_TEXT_KOMMA_01",
+    "category": "TEXT",
+    "linked_error_ids": [],
+    "exercise_type": "correction",
+    "title": "Kommasetzung im Einladungstext",
+    "instruction": "Setze die fehlenden Kommas vor den Nebensätzen. Der kurze Einladungstext enthält mehrere Kommafehler.",
+    "example_prompt": "Liebe Ayşe ich freue mich dass du am Samstag kommst. Sag mir bitte Bescheid wenn du früher da bist. Ich hoffe dass wir einen schönen Abend haben.",
+    "example_answer": "Liebe Ayşe, ich freue mich, dass du am Samstag kommst. Sag mir bitte Bescheid, wenn du früher da bist. Ich hoffe, dass wir einen schönen Abend haben.",
+    "feedback_pattern": "Vor 'dass' und 'wenn' steht ein Komma, weil sie Nebensätze einleiten. Im zusammenhängenden Einladungstext wird die Regel mehrfach am selben Texttyp angewendet – statt an einem isolierten Einzelsatz."
   }
 ]
